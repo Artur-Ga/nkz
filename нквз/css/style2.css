@@ -1,0 +1,207 @@
+.contact-form-open {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.contact-form-open img {
+    height: 50px;
+    width: 50px;
+    transition: all ease 0.7s;
+}
+
+.contact-form-open img:hover {
+    transform: scale(1.1);
+}
+
+#contact-form-container {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    transition: all ease 0.7s;
+}
+
+#contact-form-container:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.form-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor:default;
+    background-color: rgba(119, 116, 116, 0.472);
+}
+
+.contact-form-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 390px;
+    min-width: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #a8bcfaba;
+    scrollbar-color:rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0);
+}
+
+.form-close {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+
+.form-close img {
+    height: 30px;
+    width: 30px;
+    transition: all ease 0.7s;
+}
+
+.form-close img:hover {
+    transform: rotate(90deg);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container {
+    margin: 50px 25px 7px 25px;
+    text-align: center;
+    width: 500px;
+}
+
+.input-container input {
+    margin: 7px;
+    height: 25px;
+    width: 210px;
+    border-radius: 7px;
+    outline: none;
+    border: solid 1px rgb(141, 141, 141);
+    border-radius: 7px;
+    transition: all 0.3s;
+}
+
+.input-container input:focus {
+    box-shadow: 0 0px 7px 0px #ffffffc6;
+}
+
+.form textarea {
+    margin: 12px 25px;
+    height: 210px;
+    width: 450px;
+    border-radius: 21px;
+    font-size: 16px;
+    outline: none;
+    border: solid 1px rgb(141, 141, 141);
+    border-radius: 7px;
+    transition: all 0.3s;
+}
+
+.form textarea:focus {
+    box-shadow: ;
+}
+
+.form-btn {
+    height: 30px;
+    width: 160px;
+    border-radius: 12px;
+    margin: 12px 0 25px 0;
+}
+
+.form-btn:hover {
+    box-shadow: rgba(172, 170, 177, 0.108) 0px 48px 100px 0px;
+    cursor: pointer;
+}
+
+
+#login-container {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    transition: all ease 0.7s;
+}
+
+#login-container:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.login-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 210px;
+    width: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a8bcfaba;    /* box-shadow: 0 3px 7px 2px rgba(0, 255, 119, 0.3); */
+    border-radius: 25px;
+    overflow: hidden;
+    scrollbar-color:rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0);
+}
+
+.register {
+    margin-bottom: 12px;
+    color: #414343;
+}
+
+#register-container {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    transition: all ease 0.7s;
+}
+
+#register-container:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.register-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 210px;
+    width: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a8bcfaba;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 25px;
+    overflow: hidden;
+    scrollbar-color:rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0);
+}
+
+.nav__user {
+    color: rgb(255, 255, 255);
+}
